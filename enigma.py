@@ -98,6 +98,7 @@ def start():
         print(Fore.GREEN+mensaje_trans+Fore.WHITE,end="")
 def initial_position():
     cambio_rotores=posicion_inicial.get()
+    cambio_rotores=cambio_rotores.upper()
     for s in cambio_rotores:
         posini.append(s)
     a=posini[0]
@@ -131,6 +132,8 @@ def start2(mensaje):
 def mensaje():
     global mensaje_trans
     texto_mensaje=etiqueta1.get()
+    texto_mensaje=texto_mensaje.upper()
+
     start2(texto_mensaje)
 
 
